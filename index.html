@@ -136,7 +136,7 @@ const PROJ=[
    ['Neon-Hand-Trails','Personal','Real-time webcam hand tracking that paints glowing neon energy trails as you move your fingertips.',['Hand tracking','Real-time'],''],
    ['Pomodoro Garden Timer','Personal','A browser-based focus timer. Try a tiny version in the garden.',['Browser app','Productivity'],''],
    ['Travel Agency Website','Personal','A website for a travel agency, showcasing tours and destinations.',['Website','Travel'],''],
-   ['BAKI','App','An app that keeps track of money people owe each other.',['App','Reminders','Money tracking'],'']
+   ['BAKI','Personal','An app that keeps track of money people owe each other.',['App','Reminders','Money tracking'],'']
   ];
 const SKILLTREE=[['Creative and digital',['Creative writing','UI/UX design','Graphic design','Video editing','Report writing','Basic digital marketing','Social media content']],['Programming',['Python','SQL','C (basic)']],['Web',['HTML (basic)','CSS (basic)','JavaScript (basic)']],['Software and tools',['Canva','Figma','Framer','Git','GitHub','Microsoft Word','Microsoft PowerPoint','Microsoft Excel','Google Docs','Google Slides']]];
 function plistHtml(){return PROJ.map(p=>`<div class="card"><h3><span>${p[0]}</span><span>${p[1]}</span></h3><p>${p[2]}</p><div>${p[3].map(t=>`<span class="tag">${t}</span>`).join('')}</div>${p[4]?`<p class="boss">${p[4]}</p>`:''}${p[5]?`<p><a class="send" href="${p[5]}" target="_blank" rel="noopener">Visit site</a></p>`:''}</div>`).join('')}
